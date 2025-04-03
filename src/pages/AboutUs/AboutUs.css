@@ -1,0 +1,215 @@
+/* Container for the main content */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 95vh; /* Ensure the section takes up part of the screen */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Background video */
+.background-video {
+    position: absolute; /* Stick the video to the top */
+    top: 0; /* Stick the video at the top of the viewport */
+    left: 0;
+    width: 100vw; /* Ensure it takes up full width */
+    height: 100vh; /* Ensure it takes up the full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire section without distortion */
+    z-index: -1; /* Keep the video behind other content */
+}
+
+/* Main content text area */
+.main-content-text {
+    width: 38%;
+    margin-top: 8%;
+    position: relative;
+    z-index: 1; /* Ensure the text content is above the video */
+    animation: main-content 1s ease-out; /* Adjusted duration to make it slower */
+
+}
+
+@keyframes main-content {
+    0% {
+        transform: translateY(100px); /* Start below */
+    }
+    100% {
+        transform: translateY(0px); /* End at normal position */
+    }
+}
+
+
+/* Headings and text styles */
+.main-content-heading {
+    font-size: 2.6rem;
+    margin-top: 4%;
+}
+
+.main-content-subheading {
+    font-size: 1.5rem;
+    line-height: 14px;
+    font-weight: 200;
+    margin-top: 3%;
+}
+
+.main-content-para {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 18px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+/* Button style */
+.main-content-btn {
+    padding: 12px 66px;
+    margin-top: 36px;
+    background: none;
+    border-radius: 22px;
+}
+
+/* Image content */
+.main-img-content {
+    width: auto;
+    margin-top: 8%;
+    position: relative;
+    z-index: 1;
+    animation: main-image 1s ease-out;
+}
+@keyframes main-image {
+    0% {
+        transform: translateY(100px); /* Start below */
+    }
+    100% {
+        transform: translateY(0px); /* End at normal position */
+    }
+}
+
+.aboutus-hero-img {
+    width: 520px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 4%;
+}
+
+/* Secondary content section */
+.secondary-content {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 8%;
+    animation: secondary-content 1s ease-out;
+}
+
+@keyframes secondary-content
+{
+    0%
+    {
+        transform: translateY(100px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.secondary-img-content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2%;
+    animation:secondary-img 1s ease-out
+}
+@keyframes secondary-img {
+    0% {
+        transform: translateY(100px); /* Start below */
+    }
+    100% {
+        transform: translateY(0px); /* End at normal position */
+    }
+    
+}
+
+.secondary-content-text {
+    width: 40%;
+    margin-top: 4%;
+    animation: secondary-content-text 1s ease-out;
+}
+@keyframes secondary-content-text
+{
+    0%
+    {
+        transform: translateY(100px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.secondary-content-heading {
+    font-size: 2.6rem;
+}
+
+.secondary-content-para {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 18px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.secondary-content-img1 {
+    width: 295px;
+    height: 380px;
+    border-radius: 22px;
+}
+
+.secondary-content-img2 {
+    height: 275px;
+    width: 180px;
+    position: absolute;
+    top: 71px;
+    left: 232px;
+    border-radius: 18px
+}
+
+/* About Us map content */
+.aboutus-content-contact {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.aboutus-content-heading {
+    font-size: 2.6rem;
+}
+
+.aboutus-content-para {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 18px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.aboutus-content-subheading {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.aboutus-gallery
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap:20px;
+    overflow: hidden;
+}
+.gallery-img
+{
+    height:280px;
+    width:300px;
+}
