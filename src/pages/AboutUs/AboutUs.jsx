@@ -3,6 +3,9 @@ import hero_img from "../../assets/aboutus-hero-img.jpg";
 import image from "../../assets/secondary-content-img.jpg";
 import image_2 from "../../assets/secondary-content-img2 .jpg"; // Fixed the file name here
 import videobg from '../../assets/8802c1a61495a6b418e4cb1e5e3d2508.mp4'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 import gallery_1 from '../../assets/gallery-1.jpg'
 import gallery_2  from '../../assets/gallery-2.jpg'
 import gallery_3  from '../../assets/gallery-3.jpg'
@@ -11,11 +14,18 @@ import { Link } from "react-router-dom";
 import "../AboutUs/AboutUs.css";
 
 const AboutUs = () => {
+  const settings = {
+    dots: true,          // Show navigation dots
+    infinite: true,      // Loop through the slides
+    speed: 200,          // Transition speed
+    slidesToShow: 1,     // Show one image at a time
+    slidesToScroll: 1,   // Scroll one image at a time
+  };
   return (
     <>
       <section>
         <div className="main-content">
-          <video autoPlay  loop muted className="background-video">
+          <video autoPlay  loop muted className="aboutus-background-video">
             <source
               src={videobg}
               type="video/mp4"
@@ -89,13 +99,34 @@ const AboutUs = () => {
           </div>
         </div>
 
-       <div className="aboutus-gallery">
-        <img src={gallery_1} className="gallery-img"alt="gallery-img-1"/>
-        <img src={gallery_2}  className="gallery-img" alt="gallery-img-2"/>
-        <img src={gallery_3}  className="gallery-img"alt="gallery-img-3"/>
-        <img src={gallery_4}  className="gallery-img"alt="gallery-img-4"/>
-
-       </div>
+        <div className="aboutus-gallery">
+      <Slider {...settings}>
+        <div>
+          <figcaption>
+          <img src={gallery_1} className="gallery-img" alt="gallery-img-1" loading="lazy" />
+          </figcaption>
+         
+        </div>
+        <div>
+          <figcaption>
+          <img src={gallery_2} className="gallery-img" alt="gallery-img-2" loading="lazy"/>
+          </figcaption>
+        
+        </div>
+        <div>
+          <figcaption>
+          <img src={gallery_3} className="gallery-img" alt="gallery-img-3" loading="lazy" />
+          </figcaption>
+        
+        </div>
+        <div>
+          <figcaption>
+          <img src={gallery_4} className="gallery-img" alt="gallery-img-4" loading="lazy" />
+          </figcaption>
+         
+        </div>
+      </Slider>
+    </div>
       </section>
     </>
   );

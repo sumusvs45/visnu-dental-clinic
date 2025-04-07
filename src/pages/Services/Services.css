@@ -1,0 +1,114 @@
+.services-main-content {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 95vh; /* Ensure the section takes up part of the screen */
+    overflow: hidden; /* Prevent overflow issues */
+    
+}
+
+/* Background video */
+.services-background-video {
+    position:sticky; /* Stick the video to the top */
+    top: 0; /* Stick the video at the top of the viewport */
+    left: 0;
+    width: 100vw; /* Ensure it takes up full width */
+    height: 100vh; /* Ensure it takes up the full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire section without distortion */
+    z-index: -1; /* Keep the video behind other content */
+}
+
+.services-hero-content
+{
+   width:70%; 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+}
+.services-hero-heading
+{
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+   
+}
+.services-hero-para
+{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 18px;
+    text-align: justify;
+    line-height: 24px;
+}
+.personalize-content-container
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 130px;
+}
+.personalize-img-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    gap:20px;
+}
+.personalize-img
+{
+    height: 264px;
+    width: 440px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 1);
+}
+.personalize-heading
+{
+    font-size:2.0rem;
+    margin-bottom: 10px;
+}
+.personalize-para
+{
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.personalize-btn
+{
+    background: none;
+    padding:16px 48px;
+    border: 1px solid #000;
+    border-radius: 18px;
+}
+
+.safety-content-container
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 130px;
+}
+.safety-heading
+{
+    font-size:2.0rem;
+
+}
+.safety-para
+{
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.safety-btn
+{
+    background: none;
+    padding:16px 48px;
+    border: 1px solid #000;
+    border-radius: 18px;
+}
