@@ -21,7 +21,7 @@
 .service-boxes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 60px 135px;
+    margin: 60px 155px;
     gap: 50px;
     justify-items: center;
     align-items: center;
@@ -48,19 +48,19 @@
 
 .service-img {
     height: 247px;
-    width: 410px;
+    width: 360px;
     border-radius: 18px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .service-box-subheading {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 8px;
     border-bottom: 1px solid #000;
 }
 
 .service-box-para {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     text-align: justify;
 }
